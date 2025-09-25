@@ -9,5 +9,6 @@ venue: "Advanced Materials Technologies"
 paper: https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202400037
 ---
 We created a general-purpose ml algorithm for identifying optimal materials and parameters for 3D-printing. Our method is applied to 3D-printing presurgical organ models. 
-2025
+
+Advanced Materials Technologies 2025
 <!--more-->
