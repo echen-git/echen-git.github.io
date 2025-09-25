@@ -211,7 +211,7 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:40% 2.5% 0 2.5%;width:100%;vertical-align:middle">
+            <td style="padding:0.75% 2.5% 0 2.5%;width:100%;vertical-align:middle">
               <h2 style="margin:0 0 8px 0;">Work</h2>
             </td>
           </tr>
@@ -239,16 +239,20 @@
               <h3>{{post.title}}</h3>
               <br>
               <em>
-                {% assign first_cat = post.categories | first %}
-                {% if first_cat %}{{ first_cat }}{% endif %}
-                {% if post.website %}{% if first_cat %} / {% endif %}<a href="{{ post.website }}">website</a>{% endif %}
+                {% if post.categories contains 'research' and post.paper %}
+                  research / <a href="{{ post.paper }}">publication</a>
+                {% else %}
+                  {% assign first_cat = post.categories | first %}
+                  {% if first_cat %}{{ first_cat }}{% endif %}
+                  {% if post.website %}{% if first_cat %} / {% endif %}<a href="{{ post.website }}">website</a>{% endif %}
+                {% endif %}
               </em>
               <div style="margin-top:8px; white-space: pre-line;">
               {{ post.excerpt | strip_html }}
               </div>
 
               <br>
-              {% if post.paper %}
+              {% if post.paper and not (post.categories contains 'research') %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
               {% if post.patent %}
