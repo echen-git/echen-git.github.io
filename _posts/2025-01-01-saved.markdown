@@ -6,6 +6,6 @@ website: https://www.saved.gg/
 video: /videos/Saved-Demo-New.mp4
 
 ---
-AI agents for moment detection in videos. We use a scoring, classification, description, and title agent to curate viral posts. Hosted the system on a bare metal server with custom infrastructure. 
+AI agents for moment detection in videos. We use a scoring, classification, description, and title agent to curate viral posts. Hosted the system on a bare metal server with custom infrastructure that supports 500 concurrent livestreams. Currently serving 4.5k+ users. 
 2025
 <!--more-->
