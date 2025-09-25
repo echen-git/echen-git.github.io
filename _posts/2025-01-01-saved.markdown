@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Automating video editing for content creators"
+date:   2025-01-01 22:21:59 +00:00
+image: /images/pfp.png
+categories: startup
+website: https://www.saved.gg/
+video: /videos/Saved-Demo-New.mp4
+
+---
+AI agents for moment detection in videos. We utilize a scoring, classification, description, and title agent to curate viral posts. Hosted the system on a bare metal server with custom infrastructure.

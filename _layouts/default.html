@@ -48,11 +48,14 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:65%;max-width:65%" alt="profile photo" src="images/pfp.png">
+              <img style="width:65%;max-width:65%" alt="profile photo" src="{{ site.baseurl }}/images/pfp.png">
             </td>
           </tr>
         </table>
 
+        {{ content }}
+
+        {% if page.layout != 'post' %}
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -73,7 +76,13 @@
           {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.video %}
+              <video playsinline autoplay muted loop preload="metadata" style="width:auto; height:auto; max-width:100%;">
+                <source src="{{ post.video | prepend: site.baseurl }}" type="video/mp4">
+              </video>
+              {% else %}
+              <img src="{{ '/tn' | append: post.image | prepend: site.baseurl }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -124,6 +133,8 @@
             </td>
           </tr>
         </table>
+
+        {% endif %}
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
@@ -131,7 +142,13 @@
           {% if cat == 'Intel' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.video %}
+              <video playsinline autoplay muted loop preload="metadata" style="width:auto; height:auto; max-width:100%;">
+                <source src="{{ post.video | prepend: site.baseurl }}" type="video/mp4">
+              </video>
+              {% else %}
+              <img src="{{ '/tn' | append: post.image | prepend: site.baseurl }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -198,7 +215,13 @@
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.video %}
+              <video playsinline autoplay muted loop preload="metadata" style="width:auto; height:auto; max-width:100%;">
+                <source src="{{ post.video | prepend: site.baseurl }}" type="video/mp4">
+              </video>
+              {% else %}
+              <img src="{{ '/tn' | append: post.image | prepend: site.baseurl }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -263,4 +286,3 @@
 </body>
 
 </html>
-
