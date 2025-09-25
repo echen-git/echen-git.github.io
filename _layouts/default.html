@@ -241,12 +241,13 @@
                 {% if first_cat %}{{ first_cat }}{% endif %}
                 {% if post.website %}{% if first_cat %} / {% endif %}<a href="{{ post.website }}">website</a>{% endif %}
               </em>
-              <br>
+              <div style="margin-top:8px; white-space: pre-line;">
               {% if post.description %}
               {{ post.description }}
               {% else %}
               {{ post.excerpt | strip_html }}
               {% endif %}
+              </div>
 
               <br>
               {% if post.paper %}
