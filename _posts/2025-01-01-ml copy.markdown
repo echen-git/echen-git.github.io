@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Pill Classifier"
+image: /images/admt202400037-fig-0002-m.jpg
+categories: project
+author: "Eric Chen"
+---
+We created a general-purpose ml algorithm for identifying optimal materials and parameters for 3D-printing. Our method is applied to 3D-printing presurgical organ models. 
+
+Advanced Materials Technologies 2025
+<!--more-->
