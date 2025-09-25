@@ -5,7 +5,7 @@ image: /images/admt202400037-fig-0002-m.jpg
 categories: research
 author: "Eric Chen"
 authors: "<strong>Eric S Chen</strong>, Alaleh Ahmadianshalchi, Sonja S Sparks, Chuchu Chen, Aryan Deshwal, Janardhan R Doppa, Kaiyan Qiu"
-venue: "International Conference on Intelligent Robots and Systems"
+venue: "Advanced Materials Technologies"
 paper: https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202400037
 ---
 We created a general-purpose ml algorithm for identifying optimal materials and parameters for 3D-printing. Our method is applied to 3D-printing presurgical organ models. 
