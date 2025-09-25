@@ -2,27 +2,3 @@
 layout: default
 title: Work
 ---
-
-<h2>Work</h2>
-
-{% for post in site.posts %}
-{% if post.categories contains 'startup' %}
-<div class="work-entry" style="margin: 24px 0;">
-  <h3 style="margin-bottom:8px;">{{ post.title }}</h3>
-  {% if post.video %}
-    {% if post.website %}<a href="{{ post.website }}" target="_blank" rel="noopener">{% endif %}
-    <video playsinline autoplay muted loop preload="metadata" style="width:100%; height:auto; border-radius:4px;">
-      <source src="{{ post.video | prepend: site.baseurl }}" type="video/mp4">
-    </video>
-    {% if post.website %}</a>{% endif %}
-  {% elsif post.image %}
-    <img src="{{ post.image | prepend: site.baseurl }}" alt="" style="width:100%; height:auto; border-radius:4px;" />
-  {% endif %}
-
-  {% if post.website %}
-  <p style="margin-top:8px;"><a href="{{ post.website }}">website</a></p>
-  {% endif %}
-</div>
-{% endif %}
-{% endfor %}
-

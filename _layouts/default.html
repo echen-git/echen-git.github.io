@@ -163,7 +163,11 @@
               <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              {% if post.description %}
+              {{ post.description }}
+              {% else %}
+              {{ post.excerpt | strip_html }}
+              {% endif %}
 
               <br>
               {% if post.website %}
@@ -236,7 +240,11 @@
               <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              {% if post.description %}
+              {{ post.description }}
+              {% else %}
+              {{ post.excerpt | strip_html }}
+              {% endif %}
 
               <br>
               {% if post.website %}
