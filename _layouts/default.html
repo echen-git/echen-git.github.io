@@ -220,7 +220,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if post.categories contains 'startup' %}
+          {% if post.categories contains 'startup' or post.categories contains 'research' %}
           <tr>
             <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:120px">
               {% if post.video %}
@@ -230,7 +230,9 @@
               </video>
               {% if post.website %}</a>{% endif %}
               {% else %}
-              <img src="{{ '/tn' | append: post.image | prepend: site.baseurl }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.image %}
+              <img src="{{ post.image | prepend: site.baseurl }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
               {% endif %}
             </td>
             <td style="padding:2.5%;width:60%;vertical-align:middle">
