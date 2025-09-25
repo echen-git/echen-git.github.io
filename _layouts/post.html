@@ -3,5 +3,8 @@ layout: default
 ---
 <article style="padding:2.5%;width:100%;box-sizing:border-box;">
   <h2 style="margin-top:0;">{{ page.title }}</h2>
+  {% if page.categories contains 'research' %}
+  {% if page.authors %}<p style="margin: 4px 0 0 0;">{{ page.authors }}</p>{% endif %}
+  {% endif %}
   {{ content }}
 </article>

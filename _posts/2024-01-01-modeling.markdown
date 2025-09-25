@@ -8,6 +8,7 @@ authors: "Jiachen Liu, <strong>Eric Chen</strong>, Shannon L. Capps"
 venue: "Geoscientific Model Development"
 paper: https://gmd.copernicus.org/articles/17/567/2024/
 ---
-We implemented an optimized C++ and Fortran library for evaluating aerosol sensitivities across the US. Our hyperdual-step method computes numerically exact first- and second-order sensitivities of species concentrations with 1/3 the cost. 
-2024
+We implemented an optimized C++ and Fortran library for evaluating aerosol sensitivities across the US. Our hyperdual-step method computes numerically exact first- and second-order sensitivities of species concentrations at 1/3 the cost. 
+
+Geoscientific Model Development 2025
 <!--more-->

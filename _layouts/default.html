@@ -237,7 +237,11 @@
             </td>
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
+              {% if post.categories contains 'research' and post.authors %}
+              <div style="margin:4px 0;">{{ post.authors }}</div>
+              {% else %}
               <br>
+              {% endif %}
               <em>
                 {% if post.categories contains 'research' and post.paper %}
                   research / <a href="{{ post.paper }}">publication</a>
