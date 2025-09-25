@@ -236,7 +236,11 @@
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              <em>
+                {% assign first_cat = post.categories | first %}
+                {% if first_cat %}{{ first_cat }}{% endif %}
+                {% if post.website %}{% if first_cat %} / {% endif %}<a href="{{ post.website }}">website</a>{% endif %}
+              </em>
               <br>
               {% if post.description %}
               {{ post.description }}
@@ -245,9 +249,6 @@
               {% endif %}
 
               <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
