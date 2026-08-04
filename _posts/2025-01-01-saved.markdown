@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Automating video editing for content creators"
+title: "AI Video Generation For Content Creators"
 categories: startup
 website: https://www.saved.gg/
 video: /videos/Saved-Demo-New.mp4
-
+video_preview: /videos/Saved-Demo-New-preview.mp4
 ---
-AI agents for moment detection in videos. We use a scoring, classification, description, and title agent to curate viral posts. Hosted the system on a bare metal server with custom infrastructure that supports 500 concurrent livestreams. Currently serving 4.5k+ users. 
+
+Agents for livestreams and videos. We identified and edited viral moments in real-time, then posted them across social media platforms. Deployed the system on a bare-metal server with custom infrastructure that supports 1000 concurrent livestreams.
+
+10k users, 2k paying customers, 1B+ views generated, six-figure ARR.
 
 2025
+
 <!--more-->

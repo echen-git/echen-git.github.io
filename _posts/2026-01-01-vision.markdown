@@ -1,0 +1,18 @@
+---
+layout: post
+title: "4D Animal Reconstruction From Sparse Photo Collections"
+images:
+  - /images/fig1.001.png
+  - /images/fig1.002.png
+categories: research
+author: "Eric Chen"
+authors: "<strong>Eric S Chen</strong>, Hadi Alzayer, Jia-Bin Huang"
+---
+
+We created a SOTA model for 4D reconstruction of animals across time. Utilized canonical volumetric representation, signed distance fields, texture fields, and 3D priors. Experimented with constraining video models.
+
+Outperformed Trellis and Hunyuan by +20.7% IoU, +51.2% DINO similarity, and +8.1% CLIP similarity.
+
+2026
+
+<!--more-->

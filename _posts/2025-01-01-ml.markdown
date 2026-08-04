@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Machine Learning Enabled Design and Optimization for 3D‐Printing of High‐Fidelity Presurgical Organ Models"
+title:  "Machine Learning Enabled Design And Optimization For 3D‐Printing Of High‐Fidelity Presurgical Organ Models"
 image: /images/admt202400037-fig-0002-m.jpg
 categories: research
 author: "Eric Chen"
@@ -8,7 +8,7 @@ authors: "<strong>Eric S Chen</strong>, Alaleh Ahmadianshalchi, Sonja S Sparks, 
 venue: "Advanced Materials Technologies"
 paper: https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202400037
 ---
-We created a general-purpose ml algorithm for identifying optimal materials and parameters for 3D-printing. Our method is applied to 3D-printing presurgical organ models. 
+We created a SOTA general-purpose ml algorithm for identifying optimal materials and parameters for 3D-printing. Our method is applied to 3D-printing presurgical organ models.
 
 Advanced Materials Technologies 2025
 <!--more-->
